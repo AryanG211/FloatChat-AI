@@ -1,0 +1,6 @@
+__pycache__
+faiss_index.bin
+before_llm_2.py
+test_llm.py
+postgresql_insert.py
+vector_insert.py

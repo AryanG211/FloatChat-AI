@@ -1,0 +1,106 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+@import 'leaflet/dist/leaflet.css';
+
+@custom-variant dark (&:is(.dark *));
+
+:root {
+  --background: #ebeae5;        /* White background */
+  --foreground: #1b1b1b;        /* Black text */
+
+  --card: #ffffff;
+  --card-foreground: #181818;
+
+  --popover: #ffffff;
+  --popover-foreground: #000000;
+
+  --primary: #000000;           /* Black as primary */
+  --primary-foreground: #ffffff; /* White text on primary */
+
+  --secondary: #e5e5e5;         /* Light gray */
+  --secondary-foreground: #000000;
+
+  --muted: #f5f5f5;             /* Very light gray */
+  --muted-foreground: #555555;  /* Medium gray text */
+
+  --accent: #000000;            /* Black as accent */
+  --accent-foreground: #ffffff;
+
+  --destructive: #ff0000;       /* Red for errors only */
+  --destructive-foreground: #ffffff;
+
+  --border: #d4d4d4;            /* Gray border */
+  --input: #ffffff;             /* White input background */
+  --ring: #00000033;            /* Subtle black ring */
+
+  --chart-1: #000000;
+  --chart-2: #444444;
+  --chart-3: #888888;
+  --chart-4: #bbbbbb;
+  --chart-5: #eeeeee;
+
+  --radius: 0.5rem; /* Rounded corners */
+
+  --sidebar: #ffffff;
+  --sidebar-foreground: #000000;
+  --sidebar-primary: #000000;
+  --sidebar-primary-foreground: #ffffff;
+  --sidebar-accent: #e5e5e5;
+  --sidebar-accent-foreground: #000000;
+  --sidebar-border: #d4d4d4;
+  --sidebar-ring: #00000033;
+}
+
+@theme inline {
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-ring: var(--sidebar-ring);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
