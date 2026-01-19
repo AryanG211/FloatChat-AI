@@ -16,12 +16,12 @@ import httpx
 from urllib.parse import quote_plus
 
 
-data_root = r"C:\Users\Mit\Desktop\argo project\Argo_Dataset\txt"
+data_root = r"path_to_your_text_file"
 
 DB_CONFIG = {
-    "dbname": "all_indian_ocean",
+    "dbname": "DBNAME",
     "user": "postgres",
-    "password": "Mit@1010",
+    "password": "Your_password",
     "host": "localhost",
     "port": "5432"
 }
