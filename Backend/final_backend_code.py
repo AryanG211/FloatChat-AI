@@ -29,7 +29,7 @@ DB_CONFIG = {
 
 load_dotenv()
 GOOGLE_API_KEY = os.getenv("GOOGLE_API_KEY")
-GEOCODER_API_KEY = "68d10cacc13ee724221487gvb9f57e8"
+GEOCODER_API_KEY = "GEOCODER_API_KEY"
 
 
 GEMINI_MODEL = "gemini-1.5-flash"
